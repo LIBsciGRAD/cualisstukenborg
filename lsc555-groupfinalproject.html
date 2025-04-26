@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>System Evaluation & Critical Analysis of the Free Library of Philadelphia Blog</title>
+<style>
+	h1::before {
+		content: url(https://libwww.freelibrary.org/assets/images/flp-logo.gif);
+		padding: 10px;
+	}
+	h1{
+		background-color: rgb(204,0,0);
+		color: white;
+		padding: 50px 30px;
+		font-family: "Times New Roman", Times, serif;
+	}
+	h2{
+		color: white;
+		width: 80%;
+		padding: 30px;
+		font-family: "Times New Roman", Times, serif;
+	}
+	h3{
+		font-family: "Monaco", monospace;
+	}
+	p{
+		font-family: "Monaco", monospace;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	a:link {
+		color: rgb(0,136,204);
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a:visited{
+		color: rgb(0,136,204);
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: white;
+		background-color: rgb(204,0,0);
+		text-decoration: underline;
+	}
+	a:active {
+		color: yellow;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	::marker { 
+		color: rgb(204,0,0);
+		font-size: 18px;
+	}
+	ol.a {
+		font-family: "Monaco", monospace;
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+	ol.c {
+  		list-style-type: upper-roman;
+		font-family: "Monaco", monospace;
+		margin-left: 45px;
+		margin-right: 45px;
+	}
+	ul.b {
+  		list-style-type: circle;
+		font-family: "Monaco", monospace;
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+	ul.d {
+  		list-style-type: lower-alpha;
+		font-family: "Monaco", monospace;
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+	table {
+		color: black;
+		font-family: "Monaco", monospace;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	th, td {
+		border: 2px solid;
+		padding: 10px;
+	}
+</style>
+</head>
+<body>
+	<p>Zach, Chloe, Sakina, and Taylor
+		<br>LSC 555: Information Systems in Library and Information Centers
+		<br>Professor Dr. Sang Hoo Oh
+		<br>30 April 2025
+	</p>
+	<h1>System Evaluation & Critical Analysis of the Free Library of Philadelphia Blog: An In-Depth Investigation</h1>
+	<h3 style="text-align:center;"><a href="https://libwww.freelibrary.org/blog/">(The Free Library of Philadelphia Blog)</a></h3>
+	<h2 style="background-color:rgb(0,136,204);">Introduction</h2>
+		<p>After brainstorming a few potential systems to evaluate for this project, our group decided to investigate the <a href="https://libwww.freelibrary.org/blog/">Free Library of Philadelphia Blog</a>. We decided that, while the overall functionality of the information system appeared user friendly and of efficient design, <b>there must still be room for improvement, just as with any information system</b>. We wanted to apply such evaluative techniques as those associated with a <b>Spiral Model of a System’s Development Life Cycle</b>, where, as a system continues to improve, design refinements and user testing scenarios are implemented. We thought that, with an in-depth investigation of the Blog of the Free Library of Philadelphia, <b>we could at least make suggestions for improvement to the Interface Design</b>, if not the Database and Systems Designs.   
+		</p>
+	<h2 style="background-color:rgb(0,136,204);">Background: Description of the Organization and Information System</h2>
+		<p>The Free Library of Philadelphia is the public library system for the City of Philadelphia. Having officially opened in 1894, today it maintains fifty-four locations across the city of Philadelphia, including forty-nine branch libraries and three regional libraries. The mission of the Free Library of Philadelphia is to “advance literacy, guide learning, and inspire curiosity. Its vision is to build an enlightened community devoted to lifelong learning.” 
+		<br><br>The website for this system is vast, featuring a catalog that indexes thousands of physical and e-materials held by the library, access to hundreds of online databases, information about programs and services offered by the Free Library as well as by local partner agencies, and more. The vastness of the website is reflective of the fact that the Free Library circulates “millions of items to hundreds of thousands of patrons, and host[s] thousands of programs every year.” According to the 2021 Annual Report, the most recent available through the website, in the fiscal year 2021 (July 1, 2020 - June 30, 2021), the Free Library serviced 715,239 library card holders (down from 840,052 in FY 2020), and saw 4,065,239 website visits (down from 6,099,144 in FY 2020) and 100,479 unique blogpost visits (down from 140,474 in FY 2020). Though these particular statistics demonstrate a general decrease in interactions at the Free Library, they show that the scope of the patronage serviced by the Free Library remains immense, and therefore library services are as important as ever. Staff at the Northeast Regional Library, the second largest location in the system, anecdotally attributed this downward trend in usage to the Covid-19 pandemic. Due to a lack of data provided by the Free Library, it is unclear whether these numbers have recovered in the fiscal years since 2021. Northeast Regional staff attest, however, that numbers they are witnessing at their branch still are not surpassing pre-pandemic numbers. 
+		<br><br>The Blog page of the Free Library website is the locus for up-to-date, in-depth information about programs and services offered by the Free Library as well as local current events and national news relevant to library services. It is a resource through which community members, visitors to the city, and anyone of the global population can become and remain informed about Philadelphia’s library landscape. The purpose of a blog of a public library system would be to maintain transparency and good relations with the public that it serves. Because the Free Library services the entire City of Philadelphia and the incredibly diverse population therein, it is important that the blog be accessible and relevant to this population. Therefore, and to narrow the scope of our project down from the vastness of the website, we decided it would be best to evaluate only the blog page. 
+		<br><br>Because of the varied demographic base of the patronage of the Free Library, it is important that the website be able to accommodate a diverse audience. The blog page can be accessed directly from the homepage of the website, via a “Blog” tab in the gray navigation bar at the top of the homepage. The blog page features the same theme, fonts, and colors as the rest of the webpage, reassuring visitors that they are still nested within the Free Library website. The color red is a prominent detail color on this page. The blog features Web 2.0 technology, namely through tags and comments left by users. Visitors to the website can peruse the tags via the tag cloud or tag list at the right hand side of the page or via the tags featured in the blog post previews. The blog post previews can be arranged in a grid or list pattern according to the user’s preference via a button in the top right corner of the blog page. There is a search box in the top left corner for users to type search words into. Finally, anchored at the bottom, right hand side of the website is a translation tool, via Google translate, which can translate the entire website, including blog posts, into a user’s preferred language. 
+		</p>		
+	<h2 style="background-color:rgb(0,128,0);">Evaluation of the Existing Information System</h2>
+		<p>For our evaluation of the information system, we implemented <b>three usability testing techniques</b> to gather mainly qualitative, and some quantitative, information on the design of the system. We applied <b>a heuristic evaluation</b> to the system using Nielson’s Ten Usability Heuristics, and we conducted <b>two different user testing techniques</b> to get a better understanding of the success and failures of the information system’s design.
+		</p>
+		<h3 style="margin-left:30px; margin-right:30px;">Heuristic Evaluation: Nielson’s Ten Usability Heuristics</h3>
+			<ol class="a">
+				<li>Visibility of system status – (Keep users informed; Ex. progress bar, status alert, etc.)</li>
+					<ul class="b">
+						<li>The response time of the website for any clickable input by the user is consistently less than 2 seconds. Due to this, there is not much need for indicating status of the output to the user, as far as displaying output progress or indicating an alert. Understandably thus, the website does not display any indication of output progress or status. That seems to be a wise choice in design as that would likely only burden the user with unnecessary information.</li>
+					</ul>
+				<li>Match between system and the real world – (Speak users’ language; Ex. menu labels, help tips, etc.)</li>
+					<ul class="b">
+						<li>Within the footer of the webpage, there is a Google-based dropdown menu translation widget that allows users to make a language selection from 15 languages. Once a language selection is made, ALL text of the entire website is translated into that language, including tags and titles. This makes the website instantly accessible and readable to users who rely on one of these 15 specific languages.  It could be that this Google-based dropdown menu is placed at the bottom of the webpage for aesthetic reasons, as the rest of the website is not Google-based, but it may be of more practical benefit to users to have this displayed within the header of the webpage so that it is easier to find.</li>
+						<li>Image of the Google translation widget:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEgooglewidget.PNG" alt="groupfinalproject-IMAGEgooglewidget" width="200"></li>
+						<li>Just below the header of the website of the Free Library of Philadelphia is a menu banner that indicates the following menus available for selection: Locations, Events, Programs & Services, About, Support the Library, Blog. This menu banner is very simple and easy to understand, making it easy for users to determine their selection based on their information-seeking need.</li>
+						<li>Image of the menu banner:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEmenubanner.PNG" alt="groupfinalproject-IMAGEmenubanner" width="800"></li>
+					</ul>
+				<li>User control and freedom – (Users should have a way out from an unwanted situation; Ex. undo, redo, “home,” etc.)</li>
+					<ul class="b">
+						<li>The Blog, and indeed the entire Free Library of Philadelphia website, is fully compatible with the web browser’s back and forward buttons. </li>
+						<li>Just below the word “Blog” in the banner of the Blog webpage, appears a menu tree that indicates where the current webpage is located within the website. A user can click on any level of the tree and is taken to that page in the tree.</li>
+						<li>Image of the page tree:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEpagetree.PNG" alt="groupfinalproject-IMAGEpagetree" width="250"></li>
+						<li>Within the Blog, there is an option for users to toggle between List view and Grid view of the articles on the page. This option is displayed efficiently with symbols indicating list and grid and the words “List” and “Grid”.</li>
+						<li>Image of the list/grid button:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGElistgrid.PNG" alt="groupfinalproject-IMAGElistgrid" width="200"></li>
+					</ul>
+				<li>Consistency and standards – (Help user learn the system; No need to wonder around finding the right function)</li>
+					<ul class="b">
+						<li>It is notable that, when the browser window is shrunk, the website consolidates its layout and the menu options, along with the log-in and the hyperlink to sign up for a library card, collapse into a dropdown menu (indicated by an icon) in the top right of the header of the website. The search bar in the header also collapses into a clickable icon, and a new icon appears as well that allows the user to search for library locations. Similarly the “Tag Cloud”, the list of “Tags”, the “Archives”, and the “RSS” feed of the Blog webpage are all moved from the right-sided pane to the bottom of the Blog page. Although there are evident layout consolidations to the website when the web browser is downsized, the layout remains consistent and user-friendly.</li>
+						<li>Image of the header expanded:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEheaderexpanded.PNG" alt="groupfinalproject-IMAGEheaderexpanded" width="700"></li>
+						<li>Image of the header collapsed:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEheadercollapsed.PNG" alt="groupfinalproject-IMAGEheadercollapsed" width="700"></li>
+					</ul>
+				<li>Error prevention – (Error correction, correction suggestions; Confirmation)</li>
+					<ul class="b">
+						<li>When an input into the Blog search bar returns no search results, only the following is indicated: “Search for: "louisville kentucky" (0)”. The indication of a failed search is recognizable only in that there were “(0)” search results. It is concise and understandable with some intuition, yet an improvement could be made to add a phrase such as “Please try other keywords.” or a similar key phrase to help encourage the user to alter their search input.</li>
+					</ul>
+				<li>Recognition rather than recall – (Minimize users’ memory load; Make objects, options, actions of the system visible)</li>
+					<ul class="b">
+						<li>Within the right-side pane of the Blog is a “Tag Cloud” that visually displays which tags have the most associated articles by increasing the font size of the tag name. This is very supportive of the “recognition rather than recall” heuristic. This visual information is easily interpreted by the user for the user to see which tags have the most associated articles.</li>
+						<li>Image of the Tag Cloud:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEtagcloud.PNG" alt="groupfinalproject-IMAGEtagcloud" width="200">
+						<li>All clickable aspects of the website change format when the pointer hovers over them (ex. a clickable word changes font color or becomes underlined, a word becomes highlighted in a different color). This yields a very intuitive interface for users who are navigating the Blog.</li>
+					</ul>
+				<li>Flexibility and efficiency of use – (Reduce the interaction; Provide shortcuts; Customization for frequent actions)</li>
+					<ul class="b">
+						<li>It does not take more that four user inputs within the Blog for the user to reach desired information (ie. the text of an article). This is a very efficient and user friendly design, preventing the user from getting lost in the organizational structure of the Blog.</li>
+						<li>The “Tags”, “Archive”, and “Tag Cloud”, as mentioned previously, are of course very helpful to the user in terms of providing efficiency in finding related articles. All the user needs to do is click on a tag name and the Blog displays all articles associated with that tag. This feature improves the user's exploration of topics but is not necessarily helpful if the user is trying to narrow down or sort their search.</li>
+						<li>At the bottom of the Blog is displayed the number of pages of articles as a search result or of articles that are linked to the selected tag or archive date. Users are able to click on the “Next” page of results or a specific page of the results.</li>
+						<li>One thing that might improve the Blog is to provide users the option to sort search results by relevance, thereby narrowing the number of articles that a user may need to look at to find relevant information.</li>
+					</ul>
+				<li>Aesthetic and minimalist design – (No need to contain irrelevant information; Minimize the units of information)</li>
+					<ul class="b">
+						<li>The Blog webpage of the Free Library of Philadelphia is efficiently designed without unnecessary duplication of selection options for the user. The header retains its structure from the homepage of the website of the Free Library of Philadelphia, where the logo is left-aligned, a catalog and website search bar is center-aligned, and a user login, donation button, and hyperlink to acquire a library card is right-aligned. The website’s page selection banner runs just below the header and is also consistent with the menu banner of the homepage of the website.</li>
+						<li>If a user clicks on the “Blog” option of the menu banner, the webpage is immediately directed to the Blog. All articles of the blog are present on the homepage of the Blog and are arranged in date order, with the newest articles listed first. Users can thus immediately explore through the recent articles by date, or they can click on a tag, or an archive date.</li>
+						<li>The use of color is minimal and consistent. The primary color is a cardinal red, and the background color is white. Other colors used are a medium grey, a cerulean blue, a basic green, and a basic orange.</li>
+					</ul>
+				<li>Help users recognize, diagnose, and recover from errors – (Provide good error messages to guide users, Indication of problem and solution)</li>
+					<ul class="b">
+						<li>When the Blog outputs no search results from a user input into the search bar, there are no indications of why the input did not yield any results, and there are no suggestions for altering the input of the user. To implement such suggestions into the search bar function however may require additional programming and slow down the output of the search results.</li>
+						<li>Image of a search result error:<br><img src="https://libscigrad.github.io/cualisstukenborg/LSC555-groupfinalproject-IMAGEsearchresulterror.PNG" alt="groupfinalproject-IMAGEsearchresulterror" width="500"></li>
+					</ul>
+				<li>Help and documentation – (Provide help and documentation for self-training; Ex. “Help” page, FAQs, help information at each stages of actions)</li>
+					<ul class="b">
+						<li>Just below the menu banner at the top of the page, and to the left of the “Blog” banner and pagetree, are three hyperlinks: “Find”, “Explore”, and “Ask”. These are not specific to the Blog but rather are meant for the entire website. However, they are very navigable and provide helpful information to the user, especially the “Ask” page which even provides a help line phone number, an “Ask a Librarian” inquiry submission, and links to FAQ’s.</li>
+					</ul>
+			</ol>
+		<h3 style="margin-left:30px; margin-right:30px;">User Testing Technique 1: Observation</h3>
+			<p style="margin-left:50px; margin-right:50px;">One of our evaluation methods was the use of observations. Our group observed two users as they used the Free Library of Philadelphia’s blog website. Each participant was given a query prompt designed to point vaguely to an existing article in the blog. Each participant had 20 minutes to find a specific article to satisfy the query. As they worked, we took note of the items they clicked and the words they used to search for an answer. Below, each observation is included with the prompt each participant is given. After the description of each observation, each observation is analyzed.
+			</p>
+			<ol class="c">
+				<li><b>Observation prompt 1:</b> “Find events or documents related to James Baldwin and his relationship with Miles Davis”</li>
+					<ul class="d">
+						<li><i>Participant:</i> Moe, 45</li>
+						<li><i>Result:</i> Was able to find a specific event and information related to James Baldwin and his relationship with Miles Davis.</li>
+						<li><i>Participant feedback:</i> Disliked the small search bar and the business of the website’s homepage.</li>
+						<li><i>Description:</i> Moe started his search on the home page. He typed in Miles Davis first, and perused a few of the collection items and news events. After hearing the prompt again, Moe searched for James Baldwin, and quickly found an item capturing Baldwin’s last recorded interview. The search engine helped complete his query with suggestions, and when he saw the interview, he expected this would include the information he was seeking. I directed him to the blog with the same prompt, and he was quickly able to find a blog post highlighting an event that celebrated the life and works of Baldwin, including his relationship with Miles Davis.</li>
+						<li><i>Analysis:</i> Though Moe did not enjoy the smallness of the text and options on the website, he was quickly able to find the information he was looking for with the help of search suggestions in the search engine. After finding a specific item in the Free Library’s collection on the subject he was seeking, he was quickly able to learn more about community and library events pertaining to the subject. The library website makes many of its resources available on each page, and this encouraged Moe to peruse the collection and find information related to his interests.</li>
+					</ul>
+				<li><b>Observation prompt 2:</b> “Find information about the Free Library of Philadelphia’s initiatives to feed the hungry”</li>
+					<ul class="d">
+						<li><i>Participant:</i> Brendan, 37</li>
+						<li><i>Result:</i> Could not find information to satisfy the query.</li>
+						<li><i>Participant feedback:</i> Brendan felt the search bar was too difficult to see on the main page, and he did not find the archive links useful.</li>
+						<li><i>Description:</i> Brendan started his search at the homepage of the website, after scanning the main page, Brendan went to the search bar and typed in the prompt. No results matched, so he checked the events tab. Still not finding what he was looking for, I suggested that he check the blog tab. Immediately Brendan began scrolling, straight past the search bar, to look at the most recent blog articles. Still not finding an article on the prompt, Brendan began looking through the archives list. He chose the community health archive and found information about medical health and heritage food events, but could not find information on feeding food-insecure populations. He scanned the archive list again, and could not think of another link that would take him to the answer he was seeking, and he gave up looking.</li>
+						<li><i>Analysis:</i> The search bar on the blog page is smaller and less visible than the main search bar on the home page, which likely caused Brendan to overlook it. The list of archives on the right is inviting, but the metadata for archive posts does not always lead the user to what they might expect. With too much information and too many connections on one page, the user can be bogged down and discouraged from his querying.</li>
+					</ul>
+			</ol>
+		<h3 style="margin-left:30px; margin-right:30px;">User Testing Technique 2: Questionnaire</h3>
+			<p style="margin-left:50px; margin-right:50px;"><b>Free Library of Philadelphia Blog Page Questionnaire</b> (Raufjon, 23)
+			<br><br>Hello! Thank you for filling out this questionnaire. This questionnaire is being conducted in an effort to evaluate the usability of the <a href="https://libwww.freelibrary.org/blog/">Free Library of Philadelphia Blog Page.</a>
+			<br><br>1. Please start by visiting the <a href="https://www.freelibrary.org/">Free Library of Philadelphia home page</a> and navigating to the Blog page, then indicate your level of agreement with the following statements.  
+			<table>
+				<tbody>
+					<tr>
+						<td><b>Raufjon, 23</b></td>
+						<td>Strongly Disagree</td>
+						<td>Disagree</td>
+						<td>Neither Agree nor Disagree</td>
+						<td>Agree</td>
+						<td>Strongly Agree</td>
+					</tr>
+					<tr>
+						<td>It was easy to navigate to the Blog page from the Free Library homepage.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Blog page provided attractive content that was immediately inviting for me to explore. </td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The tag clouds on the right hand side were useful for navigating the page and finding topics of interest to me.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+					</tr>
+					<tr>
+						<td>The accessibility features on the Blog page were helpful and useful to me.</td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information about each Blog post (title, date, author, tags, etc.) presented in the preview is helpful and relevant.</td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found useful or relevant information on the Blog page.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found interesting information on the Blog page. </td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information on the Blog page helped me feel more informed about what is going on in my community.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Web 2.0 technology on this page was helpful and useful to me.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span>(“Implemented, but not as much as I wanted”)</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+			</table>
+			<p style="margin-left:50px; margin-right:50px;">2.Please comment on something you liked about the webpage. “Nothing.”
+			<br><br>3. Please comment on something you didn’t like about the webpage. “No dark mode. Could not find accessibility features.”
+			<br><br>Please include additional comments, if any, about the webpage. “It’s boring and seems too boring.” 
+			<br><br>**Oral commentary after Chloe’s follow up questions**
+			<br>*“Could be okay for older people. But our generation needs more interaction.” → example of an interactive element: “I wish there were more comments to interact with… feels like a forgotten temple.” → The challenge seems to be to make the Blog more enticing to comment on, so more people will comment, and still others will feel more engaged and inclined to comment themselves.
+			<br>*The Blog should utilize AI. Ex: “I don’t want to look from one page to the next. I want the main search bar on the homepage, to type in what I want and find it in the first result.”
+			<br>*The previewed blog articles will change when I log into my library account? I would like it to.” → Suggestion is to use a social media-like algorithm to curate a Blog feed/webpage interface for the patron once they log in to the website using their library card number and pin.
+			<br>*#1 concern is dark mode (“My PC is already in dark mode, but the website isn’t/won’t.”)
+			</p>
+			<p style="margin-left:50px; margin-right:50px;"><b>Free Library of Philadelphia Blog Page Questionnaire</b> (Hua, 32)
+			<br><br>Hello! Thank you for filling out this questionnaire. This questionnaire is being conducted in an effort to evaluate the usability of the <a href="https://libwww.freelibrary.org/blog/">Free Library of Philadelphia Blog Page.</a>
+			<br><br>1. Please start by visiting the <a href="https://www.freelibrary.org/">Free Library of Philadelphia home page</a> and navigating to the Blog page, then indicate your level of agreement with the following statements.  
+			<table>
+				<tbody>
+					<tr>
+						<td><b>Hua, 32</b></td>
+						<td>Strongly Disagree</td>
+						<td>Disagree</td>
+						<td>Neither Agree nor Disagree</td>
+						<td>Agree</td>
+						<td>Strongly Agree</td>
+					</tr>
+					<tr>
+						<td>It was easy to navigate to the Blog page from the Free Library homepage.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Blog page provided attractive content that was immediately inviting for me to explore. </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The tag clouds on the right hand side were useful for navigating the page and finding topics of interest to me.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The accessibility features on the Blog page were helpful and useful to me.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information about each Blog post (title, date, author, tags, etc.) presented in the preview is helpful and relevant. </td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span>(seemed fine, didn’t have strong opinion)</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found useful or relevant information on the Blog page.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found interesting information on the Blog page. </td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information on the Blog page helped me feel more informed about what is going on in my community.</td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Web 2.0 technology on this page was helpful and useful to me.</td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span>(“It could be, but I didn’t use it.”)</td>
+						<td></td>
+						<td></td>
+					</tr>
+			</table>
+			<p style="margin-left:50px; margin-right:50px;">2.Please comment on something you liked about the webpage. “Easy to find and useful looking stuff.”
+			<br><br>3. Please comment on something you didn’t like about the webpage. “Little overwhelming.”
+			<br><br>Please include additional comments, if any, about the webpage. None. 
+			<br><br>**Oral commentary after Chloe’s follow up questions**
+			<br>*Lots of links at once. To improve this, see where we can eliminate links, ex: grouping tags, ex: job fair, job listing, job readiness can all go under “Jobs” link umbrella
+			<br>*Tag cloud, tags, and tags within blog article previews feels redundant/unnecessary
+			</p>
+			<p style="margin-left:50px; margin-right:50px;"><b>Free Library of Philadelphia Blog Page Questionnaire</b> (Arvin, 23)
+			<br><br>Hello! Thank you for filling out this questionnaire. This questionnaire is being conducted in an effort to evaluate the usability of the <a href="https://libwww.freelibrary.org/blog/">Free Library of Philadelphia Blog Page.</a>
+			<br><br>1. Please start by visiting the <a href="https://www.freelibrary.org/">Free Library of Philadelphia home page</a> and navigating to the Blog page, then indicate your level of agreement with the following statements.  
+			<table>
+				<tbody>
+					<tr>
+						<td><b>Arvin, 23</b></td>
+						<td>Strongly Disagree</td>
+						<td>Disagree</td>
+						<td>Neither Agree nor Disagree</td>
+						<td>Agree</td>
+						<td>Strongly Agree</td>
+					</tr>
+					<tr>
+						<td>It was easy to navigate to the Blog page from the Free Library homepage.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+					</tr>
+					<tr>
+						<td>The Blog page provided attractive content that was immediately inviting for me to explore. </td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The tag clouds on the right hand side were useful for navigating the page and finding topics of interest to me.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The accessibility features on the Blog page were helpful and useful to me.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information about each Blog post (title, date, author, tags, etc.) presented in the preview is helpful and relevant. </td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found useful or relevant information on the Blog page.</td>
+						<td></td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>I quickly found interesting information on the Blog page.</td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The information on the Blog page helped me feel more informed about what is going on in my community.</td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>The Web 2.0 technology on this page was helpful and useful to me.</td>
+						<td><span style='font-size:50px;'>&#9989;</span></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+			</table>
+			<p style="margin-left:50px; margin-right:50px;">2.Please comment on something you liked about the webpage. N/a
+			<br><br>3. Please comment on something you didn’t like about the webpage.“Web 2.0 is a horrible idea… You don’t know if they know what they’re talking about or if they’re talking out their butt.”
+			<br><br>Please include additional comments, if any, about the webpage. N/a
+			<br><br>**Oral commentary after Chloe’s follow up questions**
+			<br>*Something distracting about the aesthetics of the page is that there’s no uniformity → “Uniform size and fonts in the tag cloud would be nice because as is, it’s showing [implying] that family and culinary are more important than literacy, etc… Maybe these are visited more? Why are some bigger than others?”
+			<br>“The tags list is better because it has a uniform size, though I’d like it to be a bigger font. What are those numbers next to them? (referencing the hyperlinked numbers in parentheses next to the tags).”
+			</p>
+	<h2 style="background-color:rgb(230,92,0);">Critical Analysis and Recommendations</h2>
+		<p>Our evaluation of the Free Library of Philadelphia’s blog database leads us to recommend that the site <b>update some of its interfacing aesthetics</b> and <b>reevaluate some of its archive metadata</b>. On the whole, our evaluation of the system indicates that the site is easy for users to navigate. While performing a search task, subjects utilized the search feature, links from the main page, and links to archived articles in order to answer their questions. One user was able to quickly find an article to satisfy his query, but was interested by the related articles the site compiled for him. This encouraged him to peruse some of the other contents of the blog page after his initial search was satisfied. While using the search engine, subjects demonstrated that the site provides useful corrective guidance with spelling suggestions that lead to specific items in the collection. It makes its contents visible and accessible to users, prevents user errors when searching, and matches typical user expectations for website layouts. 
+		<br><br><b>Users faced some difficulty, however, with the amount of information on the home page and, at times, the irrelevant metadata connections through the archive links</b>. Several participants completing the questionnaire noted that the website did not provide particularly attractive content for users. At a glance, the website’s color scheme and its links to content could distract users from their search tasks, such that one user overlooked the search bar completely.  Overlooking the search bar, the user turned to the archive bar on the right side of the window, but struggled to use this resource to get to the specific answer he needed. Searching for information about Philadelphia’s initiatives to feed the hungry in the community, the subject used the archive link on health and wellness, but was not able to find a specific post to satisfy his query. <b>While the site encourages users to peruse its robust collection, finding specific information can be challenging due to the noisiness of the main page and the small size of the search bar feature.</b>
+		</p>
+		<h3 style="margin-left:30px; margin-right:30px;">Our Recommendations</h3>
+		<p>As the library’s database grows at the same time that user needs and preferences evolve, it is important that the Free Library of Philadelphia applies a spiral systems analysis model to the design of its blog site. The website’s base is simple and intuitive for users who do not have a specific query, but it could do more to <b>make its search tools more readily available for users with specific search needs</b>. Making these changes would <i>not require an overhaul of the entire system</i>, but rather <b>a few minor changes to the website’s aesthetic presentation and feature visibility</b>. Usability tests should be regularly conducted in order to better gauge the needs of users, and these evaluations should feed back into the system’s development. 
+		</p>		
+	<h2 style="background-color:rgb(128,128,128);">Conclusion</h2>
+		<p>Through our evaluation of the Free Library of Philadelphia’s blog page on its website (www.freelibrary.org), using Nielsen’s Ten Usability Heuristics and insights from user testing, we conclude that the blog is a highly effective and accessible platform for engaging patrons and promoting the library’s mission to advance literacy, guide learning, and inspire curiosity. The blog’s intuitive navigation, robust search functionality, and accessibility features, such as the Google-based translation widget and compatibility with screen readers, make it a valuable resource for Philadelphia’s diverse community. User testing revealed strengths in the blog’s ability to quickly deliver relevant content, as seen in Moe’s success in finding information about James Baldwin and Miles Davis, and its visually clear tag cloud, which aids topic exploration. However, challenges include the small, less visible blog search bar, occasional information overload from redundant tags, and limited interactive elements, which deter younger users like Raufjon, who expressed a desire for features like dark mode and AI-driven content curation.
+		<br><br>Our recommendations focus on enhancing user engagement and streamlining the interface. We propose adopting an iterative systems development approach to implement targeted improvements, such as increasing the prominence of the search bar, consolidating redundant tags under broader categories (e.g., grouping job-related tags under “Jobs”), and introducing a dark mode to align with modern user preferences. Additionally, integrating Web 2.0 features, such as user comment sections or a social media-like algorithm to personalize blog feeds based on patron login data, could boost interactivity and appeal to younger audiences. Exploring open-source solutions from other public library systems, such as enhanced search algorithms or interactive event calendars, could further optimize functionality. The Free Library’s blog is well-positioned to support its 715,239 cardholders and 4,065,239 annual website visitors, and with these enhancements, it can remain a dynamic tool for community engagement and lifelong learning. A follow-up evaluation is recommended to assess the impact of these changes and ensure the blog continues to meet evolving user needs.
+		</p>
+</body>
+</html>
